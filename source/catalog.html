@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo logo" href="#">
+      <a class="page-header__logo logo" href="index.html">
         <img class="logo__image" src="#" width="191" height="39" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <nav class="main-nav">
@@ -26,14 +26,14 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="products__title">Каталог продукции</h1>
+    <main class="main">
+      <h1 class="main__products__title">Каталог продукции</h1>
       <section class="products">
         <div class="products__wrapper">
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Оранжевая банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Оранжевая банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -60,8 +60,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Оранжевая банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Оранжевая банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -88,8 +88,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Зеленая банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Зеленая банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -116,8 +116,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Зеленая банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Зеленая банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -144,8 +144,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Синяя банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Синяя банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -172,8 +172,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Синяя банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Синяя банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -200,8 +200,8 @@
 
           <article class="products__card product-card">
             <div class="product-card__wrapper">
-              <div class="product-card__image">
-                <img class="product-card__image-product" src="#" width="140" height="144" alt="Фиолетовая банка Cat Energy PRO">
+              <div class="product-card__image-wrapper">
+                <img class="product-card__image" src="#" width="140" height="144" alt="Фиолетовая банка Cat Energy PRO">
               </div>
               <div class="product-card__info product-info">
                 <h3 class="product-info__title product-title">
@@ -227,7 +227,7 @@
           </article>
         </div>
         <div class="products__more-products more-products">
-          <p class="more-products__title more-products_tittle--plus">Показать еще 100500 товаров</p>
+          <p class="more-products__title more-products__title--plus">Показать еще 100500 товаров</p>
           <p class="more-products__subtitle">На самом деле вкусов гораздо больше!</p>
           <a class="more-products__button button button--grey" href="#"></a>
         </div>
@@ -303,7 +303,7 @@
       <div class="page-footer__map map">
         <img class="map__image" src="#" width="320" height="400" alt="Карта расположения офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
-      <a class="page-footer__logo logo" href="#">
+      <a class="page-footer__logo logo" href="index.html">
         <img class="logo-image" src="#" alt="Логотип интернет-магазина «Кэт энерджи»">
       </a>
       <ul class="page-footer__socials socials">
@@ -318,8 +318,10 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <p class="copyright__developer">HTML Academy</p>
-        <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="copyright__developer">HTML Academy</p>
+          <img class="copyright__image" src="#" width="27" height="34" alt="Логотип HTML Academy">
+        </a>
       </div>
     </footer>
   </body>
