@@ -1,0 +1,76 @@
+@import "variables.less";
+@import "mixins.less";
+@import "blocks/container.less";
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/site-list.less";
+@import "blocks/info.less";
+@import "blocks/programs.less";
+@import "blocks/hows-work.less";
+@import "blocks/example.less";
+@import "blocks/indicators.less";
+@import "blocks/slider-result.less";
+@import "blocks/slider-list.less";
+@import "blocks/strip.less";
+@import "blocks/page-footer.less";
+@import "blocks/contacts.less";
+@import "blocks/map.less";
+@import "blocks/socials.less";
+@import "blocks/copyright.less";
+
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../source/fonts/Oswald/Oswaldregular.woff2") format("woff2"),
+       url("../source/fonts/Oswald/Oswaldregular.woff") format("woff");
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 13px;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  padding: 11px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 280px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: @green;
+}
+
+
