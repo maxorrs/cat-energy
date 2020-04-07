@@ -1,6 +1,11 @@
 .contacts {
-  background-color: #fff;
+  background-color: @white;
 }
+
+.contacts.contacts--grey {
+  background-color: #f2f2f2;
+}
+
 
 .contacts__wrapper {
   display: flex;
@@ -10,6 +15,7 @@
 .contacts__title {
   margin: 0;
   margin-right: 15px;
+  padding-top: 1px;
   width: 125px;
   color: @black;
   text-transform: uppercase;
@@ -23,5 +29,5 @@
   color: @grey-text;
   font-size: 14px;
   line-height: 20px;
-  font-family: "Arial", sans-serif;
+  font-family: @secondary-font, sans-serif;
 }

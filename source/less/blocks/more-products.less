@@ -1,0 +1,38 @@
+.more-products {
+  padding-top: 80px;
+  padding-bottom: 24px;
+  border: 1px solid #ededed;
+  border-top: none;
+  text-align: center;
+}
+
+.more-products__title {
+  margin: 0;
+  padding-bottom: 7px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: @black;
+  text-transform: uppercase;
+}
+
+.more-products__title.more-products__title--plus::before {
+  content: "";
+  position: absolute;
+  top: -54px;
+  left: 144px;
+  display: block;
+  width: 31px;
+  height: 31px;
+  background-image: url("/img/icon-plus-mobile.svg");
+  opacity: 0.1;
+}
+
+.more-products__subtitle {
+  margin: 0;
+  padding-bottom: 21px;
+  font-family: @secondary-font, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: @grey-text;
+}

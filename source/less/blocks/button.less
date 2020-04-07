@@ -1,12 +1,23 @@
 .button {
-  padding: 11px 10px;
+  padding: 10px;
   display: inline-block;
   vertical-align: middle;
   width: 280px;
   text-align: center;
   text-transform: uppercase;
-  color: #fff;
-  font-size: 14px;
-  line-height: 18px;
+  font-family: @primary-font, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  border: none;
+}
+
+.button.button--green {
+  color: @white;
   background-color: @green;
+}
+
+.button.button--grey {
+  background-color: @button-grey;
+  color: @grey-text;
 }

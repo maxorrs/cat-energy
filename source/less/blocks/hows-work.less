@@ -3,8 +3,8 @@
 }
 
 .hows-work__title {
-  padding-top: 17px;
-  padding-bottom: 13px;
+  padding-top: 19px;
+  padding-bottom: 11px;
   margin: 0;
   font-size: 36px;
   line-height: 60px;
@@ -17,7 +17,6 @@
   padding-top: 13px;
   padding-bottom: 13px;
   position: relative;
-  list-style: none;
 }
 
 .hows-work__item {
@@ -44,13 +43,13 @@
 
 .hows-work__text {
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: @secondary-font, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: @grey-text;
 }
 
-.hows-work__item--leaf::before {
+.hows-work__item.hows-work__item--leaf::before {
   content: "";
   position: absolute;
   background-image: url("../img/advantage-leaf@1x.png");
@@ -58,7 +57,7 @@
   background-repeat: no-repeat;
 }
 
-.hows-work__item--powder::before {
+.hows-work__item.hows-work__item--powder::before {
   content: "";
   position: absolute;
   background-image: url("../img/advantage-powder@1x.png");
@@ -66,7 +65,7 @@
   background-repeat: no-repeat;
 }
 
-.hows-work__item--food::before {
+.hows-work__item.hows-work__item--food::before {
   content: "";
   position: absolute;
   background-image: url("../img/advantage-dining@1x.png");
@@ -74,7 +73,7 @@
   background-repeat: no-repeat;
 }
 
-.hows-work__item--time::before {
+.hows-work__item.hows-work__item--time::before {
   content: "";
   position: absolute;
   background-image: url("../img/advantage-clock@1x.png");

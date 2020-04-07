@@ -1,16 +1,26 @@
 .site-list {
   .list-reset();
-  display: flex;
+  width: 280px;
+  display: none;
   flex-direction: column;
-  list-style: none;
   text-transform: uppercase;
 }
 
 .site-list__item {
+  position: relative;
   padding-top: 22px;
-  padding-bottom: 23px;
+  padding-bottom: 24px;
   text-align: center;
-  border-bottom: 1px solid #e6e6e6;
+
+  &::after {
+    content: "";
+    bottom: 0;
+    left: -20px;
+    position: absolute;
+    display: block;
+    width: 320px;
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 .site-list__link {
@@ -18,4 +28,12 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
+}
+
+.site-list.site-list--show {
+  display: flex;
+}
+
+.site-list.site-list--remove {
+  display: none;
 }
