@@ -1,11 +1,13 @@
 .page-header {
-  position: relative;
   padding-top: 5px;
 }
 
 .page-header__bar {
   position: relative;
+  width: 320px;
+  padding: 0 20px;
   padding-bottom: 16px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -14,7 +16,7 @@
   &::after {
     position: absolute;
     bottom: 0;
-    left: -20px;
+    left: 0;
     display: block;
     content: "";
     width: 320px;
@@ -24,6 +26,6 @@
 
 .page-header__menu-toggle {
   position: absolute;
-  right: 3px;
+  right: 22px;
   top: 12px;
 }

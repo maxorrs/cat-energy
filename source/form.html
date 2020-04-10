@@ -2,17 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Подбор программы | «Кэт энерджи»</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header">
       <div class="page-header__bar">
-        <a class="page-header__logo logo" href="#">
+        <a class="page-header__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-mobile.svg" width="191" height="39" alt="Логотип интернет-магазина «Кэт энерджи»">
         </a>
-        <button class="page-header__menu-toggle menu-toggle menu-toggle--open menu-toggle--show" type="button" aria-label="Открыть меню"></button>
-        <button class="page-header__menu-toggle menu-toggle menu-toggle--close" type="button" aria-label="Закрыть меню"></button>
+        <button class="page-header__menu-toggle menu-toggle menu-toggle--open" type="button" aria-label="Открыть меню"></button>
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list site-list site-list--show">
@@ -22,8 +22,8 @@
           <li class="site-list__item">
             <a class="site-list__link" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item site-list__item--active">
-            <a class="site-list__link">Подбор программы</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--active">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -39,11 +39,11 @@
           </label>
           <label class="form__item input">
             <span class="input__label">Вес (кг):*</span>
-            <input class="input__control" type="text" name="weight" placeholder="7" required>
+            <input class="input__control input__control--weight" type="text" name="weight" placeholder="7" required>
           </label>
           <label class="form__item input">
             <span class="input__label">Возраст (лет):</span>
-            <input class="input__control" type="text" name="age" placeholder="7">
+            <input class="input__control input__control--age" type="text" name="age" placeholder="7">
           </label>
         </div>
         <div class="form__radio">
@@ -61,24 +61,24 @@
           </label>
         </div>
         <div class="form__contacts">
-          <h2 class="form__title form__title--decor form__title-contacts">Контактные данные (владельца кота)</h2>
+          <h2 class="form__title form__title-contacts">Контактные данные (владельца кота)</h2>
           <label class="form__item input">
-            <span class="input__label">E-mail:*</span>
+            <span class="input__label input__label--email">E-mail:*</span>
             <input class="input__control input__control--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form__item input">
-            <span class="input__label">Телефон:*</span>
+            <span class="input__label input__label--tel">Телефон:*</span>
             <input class="input__control input__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" required>
           </label>
         </div>
         <div class="form__comment">
-          <h2 class="form__title form__title--decor form__title-comment">Комментарий</h2>
+          <h2 class="form__title form__title-comment">Комментарий</h2>
           <label class="form__item input">
             <textarea class="input__control input__control--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </label>
         </div>
         <div class="form__additionally">
-          <h2 class="form__title form__title--decor form__title-additionally">Дополнительно</h2>
+          <h2 class="form__title form__title-additionally">Дополнительно</h2>
           <label class="form__item checkbox">
             <input class="checkbox__control visually-hidden" type="checkbox" name="sugar-substitute" checked>
             <span class="checkbox__label">Сахарозаменитель</span>
@@ -120,10 +120,10 @@
         </div>
       </div>
       <div class="page-footer__map map">
-        <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" alt="Карта расположения офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="362" alt="Карта расположения офиса по адресу: ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
       </div>
       <div class="page-footer__bottom container">
-        <a class="page-footer__logo logo" href="#">
+        <a class="page-footer__logo logo" href="index.html">
           <img class="logo__image" src="img/logo-footer.svg" width="128" height="24" alt="Логотип интернет-магазина «Кэт энерджи»">
         </a>
         <ul class="page-footer__socials socials">
@@ -163,6 +163,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/menu.js"></script>
+    <script src="js/form-minify.js"></script>
   </body>
 </html>

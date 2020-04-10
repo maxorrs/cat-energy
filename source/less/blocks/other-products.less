@@ -1,25 +1,27 @@
 .other-products {
-  padding-top: 9px;
+  padding-top: 29px;
 }
 
 .other-products__title {
-  padding-bottom: 13px;
+  margin: 0;
+  padding-right: 45px;
+  padding-bottom: 33px;
   position: relative;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: @black;
-}
 
-.other-products__title.other-products__title--decor::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 13px;
-  right: -20px;
-  width: 53px;
-  height: 3px;
-  background-color: @green;
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 13px;
+    right: -20px;
+    width: 53px;
+    height: 3px;
+    background-color: @primary-color;
+  }
 }
 
 .other-products__wrapper {

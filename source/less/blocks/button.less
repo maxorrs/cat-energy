@@ -5,7 +5,7 @@
   width: 280px;
   text-align: center;
   text-transform: uppercase;
-  font-family: @primary-font, sans-serif;
+  font-family: @primary-font;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -14,7 +14,16 @@
 
 .button.button--green {
   color: @white;
-  background-color: @green;
+  background-color: @primary-color;
+
+  &:hover {
+    background-color: @grass;
+  }
+
+  &:active {
+    background-color: @grass;
+    color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .button.button--grey {
