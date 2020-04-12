@@ -1,0 +1,75 @@
+.input {
+  margin-bottom: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.input__label {
+  margin-right: 15px;
+  font-size: 16px;
+  line-height: 18px;
+  color: @black-two;
+  text-transform: uppercase;
+}
+
+.input__control {
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 14px;
+  padding-right: 13px;
+  flex-grow: 1;
+  font-family: @primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  border: 1px solid #cdcdcd;
+
+  &::placeholder {
+    font-family: @primary-font;
+    text-transform: uppercase;
+  }
+}
+
+.input__control.input__control--weight {
+  padding-left: 17px;
+}
+
+.input__control.input__control--age {
+  padding-left: 16px;
+}
+
+.input__label.input__label--email {
+  margin-right: 12px;
+}
+
+.input__label.input__label--tel {
+  margin-right: 11px;
+}
+
+.input__control.input__control--email {
+  padding-right: 44px;
+  display: block;
+  background-image: url("../img/icon-mail.svg");
+  background-size: 17px;
+  background-position: 185px 15px;
+  background-repeat: no-repeat;
+}
+
+.input__control.input__control--tel {
+  padding-right: 44px;
+  display: block;
+  background-image: url("../img/icon-phone.svg");
+  background-size: 20px;
+  background-position: 170px 12px;
+  background-repeat: no-repeat;
+}
+
+.input__control.input__control--textarea {
+  padding-left: 15px;
+  height: 150px;
+}

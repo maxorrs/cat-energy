@@ -1,0 +1,52 @@
+.checkbox {
+  position: relative;
+  padding-left: 47px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 10.5px;
+}
+
+.checkbox__tick {
+  display: none;
+  width: 22px;
+  height: 17px;
+}
+
+.checkbox__label {
+  position: relative;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: normal;
+  color: @black-two;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox__control + .checkbox__label::after {
+  content: "";
+  position: absolute;
+  left: -46px;
+  top: -4px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.checkbox__control:checked ~ .checkbox__tick {
+  content: "";
+  width: 22px;
+  height: 17px;
+  display: block;
+  position: absolute;
+  left: 5px;
+  top: 7px;
+  fill: @primary-color;
+}
+
+.checkbox__control:focus + .checkbox__label {
+  outline: auto;
+  outline-width: 5px;
+  outline-color: #2667e5;
+  outline-offset: 2px;
+}
