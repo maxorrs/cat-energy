@@ -1,6 +1,7 @@
 .slider-list {
   .list-reset();
-  padding-top: 13px;
+  width: 311px;
+  height: 232px;
 }
 
 .slider-list__image.slider-list__image--before-use {
@@ -13,4 +14,11 @@
 
 .slider-list__image.slider-list__image--show {
   display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-list__image {
+    margin: 0 auto;
+    display: block;
+  }
 }

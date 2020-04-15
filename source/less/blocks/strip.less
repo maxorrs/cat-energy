@@ -31,3 +31,43 @@
 .strip__fill.strip__fill--show {
   display: block;
 }
+
+
+@media (min-width: @tablet-width) {
+  .strip__fill.strip__fill--show {
+    display: none;
+  }
+
+  .strip {
+    width: 428px;
+    height: 6px;
+    border: none;
+    background-color: #dcdcdc;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -14px;
+      left: 200px;
+      width: 34px;
+      height: 34px;
+      background-color: @white;
+      border: 1px solid #cdcdcd;
+      border-radius: 50%;
+    }
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: -2px;
+      left: 213px;
+      width: 8px;
+      height: 8px;
+      background-color: @primary-color;
+      border-radius: 50%;
+      z-index: 5;
+    }
+  }
+}

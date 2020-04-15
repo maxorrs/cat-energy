@@ -1,7 +1,21 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .container {
+    padding: 0 30px;
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .container {
+    padding: 0 110px;
+    width: 1220px;
+    background-color: yellow;
+  }
 }

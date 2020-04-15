@@ -1,14 +1,16 @@
 .button {
   padding: 10px;
+  padding-top: 12px;
+  padding-bottom: 10px;
   display: inline-block;
   vertical-align: middle;
   width: 280px;
   text-align: center;
   text-transform: uppercase;
   font-family: @primary-font;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: normal;
-  line-height: 20px;
+  line-height: 18px;
   border: none;
 }
 
@@ -29,4 +31,14 @@
 .button.button--grey {
   background-color: @button-grey;
   color: @grey-text;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
