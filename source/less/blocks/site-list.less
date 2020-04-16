@@ -45,6 +45,7 @@
 
 .site-list__link.site-list__link--active {
   position: relative;
+  cursor: default;
 
   &::after {
     content: "";
@@ -80,6 +81,7 @@
 @media (min-width: @tablet-width) {
   .site-list {
     padding: 0;
+    padding-top: 3px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -99,5 +101,11 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+  }
+
+  .site-list__link.site-list__link--active {
+    &::after {
+      bottom: -9px;
+    }
   }
 }

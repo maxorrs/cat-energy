@@ -31,3 +31,38 @@
 .other-products__image-gift {
   padding-bottom: 34px;
 }
+
+@media (min-width: @tablet-width) {
+  .other-products {
+    padding-top: 0;
+  }
+
+  .other-products__wrapper {
+    padding-bottom: 69px;
+  }
+
+  .other-products__title {
+    padding-left: 38px;
+    padding-right: 315px;
+    padding-bottom: 78px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 20px;
+      left: -30px;
+      width: 28px;
+      height: 3px;
+      background-color: @primary-color;
+    }
+
+    &::after {
+      top: 20px;
+      right: -30px;
+      width: 327px;
+    }
+  }
+}

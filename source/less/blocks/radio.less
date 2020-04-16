@@ -48,3 +48,33 @@
   outline-color: #2667e5;
   outline-offset: 2px;
 }
+
+@media (min-width: @tablet-width) {
+  .radio {
+    padding-left: 60px;
+    padding-top: 9px;
+    padding-bottom: 11px;
+    margin-bottom: 13px;
+  }
+
+  .radio__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .radio__control + .radio__label::before {
+    left: -59px;
+    top: -6px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #cdcdcd;
+    border-radius: 50%;
+  }
+
+  .radio__control:checked + .radio__label::after {
+    left: -48px;
+    top: 5px;
+    width: 18px;
+    height: 18px;
+  }
+}

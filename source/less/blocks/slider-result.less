@@ -5,7 +5,7 @@
 
 .slider-result__controls {
   margin: 0 auto;
-  width: 195px;
+  width: 200px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -31,15 +31,14 @@
 }
 
 .slider-result__slider-list {
-  display: block;
-  margin-bottom: 30px;
-  position: absolute;
-  bottom: 58px;
-  left: -17px;
+  margin-bottom: 39px;
 }
 
 @media (min-width: @tablet-width) {
   .slider-result__controls {
+    position: absolute;
+    top: -94px;
+    left: 93px;
     width: 578px;
   }
 
@@ -55,6 +54,7 @@
   .slider-result__slider-list {
     padding: 0;
     margin: 0 auto;
-    position: static;
+    position: absolute;
+    top: -300px;
   }
 }
