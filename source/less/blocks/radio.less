@@ -7,6 +7,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .radio__label {
@@ -29,6 +33,10 @@
   height: 30px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
+}
+
+.radio__label:hover::before {
+  border: 1px solid #bababa;
 }
 
 .radio__control:checked + .radio__label::after {
@@ -67,8 +75,6 @@
     top: -6px;
     width: 40px;
     height: 40px;
-    border: 1px solid #cdcdcd;
-    border-radius: 50%;
   }
 
   .radio__control:checked + .radio__label::after {

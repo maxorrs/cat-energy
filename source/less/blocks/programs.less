@@ -125,8 +125,6 @@
 
 @media (min-width: @tablet-width) {
   .programs {
-    width: 768px;
-    padding: 0 30px;
     padding-top: 22px;
     padding-bottom: 30px;
   }
@@ -221,5 +219,46 @@
 
   .programs__link.programs__link--pro::after {
     left: 125px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__item {
+    padding-left: 50px;
+    padding-top: 41px;
+    padding-right: 55px;
+    padding-bottom: 64px;
+    width: 570px;
+    margin-right: 80px;
+    margin-bottom: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .programs__title {
+    padding-top: 38px;
+    padding-bottom: 28px;
+    text-align: center;
+
+    &::after {
+      top: 6px;
+      left: 2px;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .programs__title.programs__title--slim::before {
+    left: 15px;
+    top: -1px;
+    width: 71px;
+    height: 97px;
+    z-index: 10;
+  }
+
+  .programs__info {
+    padding: 0;
   }
 }

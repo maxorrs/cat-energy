@@ -1,13 +1,15 @@
 .image-gift {
   position: relative;
   padding-top: 65px;
-}
 
-.image-gift__image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-resolution: @retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .image-gift__icon {
@@ -38,12 +40,14 @@
   .image-gift {
     padding-top: 65px;
     padding-left: 91px;
-    padding-bottom: 144px;
     padding-right: 100px;
-  }
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px auto;
 
-  .image-gift__image {
-    width: auto;
+    @media (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .image-gift__wrapper {

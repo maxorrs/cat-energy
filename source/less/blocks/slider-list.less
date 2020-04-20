@@ -7,6 +7,10 @@
   height: 232px;
 }
 
+.slider-list__image.slider-list__image--remove {
+  display: none;
+}
+
 .slider-list__image.slider-list__image--before-use {
   display: none;
 }
@@ -24,13 +28,8 @@
 }
 
 @media (min-width: @tablet-width) {
-  .slider-list__image.slider-list__image--show {
-    display: none;
-  }
-
   .slider-list {
-    width: 100%;
-    display: flex;
+    width: 700px;
   }
 
   .slider-list__item {
@@ -46,7 +45,5 @@
   .slider-list__item--before-after {
     display: block;
     width: 640px;
-    left: 83px;
-    top: -332px;
   }
 }

@@ -4,6 +4,10 @@
   padding-top: 7px;
   padding-bottom: 7px;
   margin-bottom: 10.5px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__tick {
@@ -31,6 +35,10 @@
   width: 30px;
   height: 30px;
   border: 1px solid #cdcdcd;
+}
+
+.checkbox__label:hover::after {
+  border: 1px solid #bababa;
 }
 
 .checkbox__control:checked ~ .checkbox__tick {
