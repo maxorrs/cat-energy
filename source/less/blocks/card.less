@@ -169,9 +169,6 @@
     padding-left: 22px;
     padding-right: 20px;
     padding-bottom: 35px;
-    position: absolute;
-    bottom: 14px;
-    right: 0;
     height: 431px;
     background: none;
     border: 1px solid #e6e6e6;
@@ -218,5 +215,33 @@
     width: 170px;
     font-size: 16px;
     line-height: 19px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .card {
+    padding: 250px 21px 40px 22px;
+    margin-right: auto;
+    margin-bottom: 56px;
+    width: 245px;
+    border: none;
+    background: linear-gradient(0deg, rgba(242, 242, 242, 1) 0%, rgba(242, 242, 242, 1) 83.4%, rgba(255, 255, 255, 1) 83.4%, rgba(255, 255, 255, 1) 100%);
+
+    &:nth-child(2n) {
+      margin-right: auto;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .card__data {
+    width: 167px;
+    margin: 0 auto;
+  }
+
+  .card__button.button {
+    width: 168px;
   }
 }

@@ -108,9 +108,9 @@
     padding-right: 79px;
     padding-bottom: 50px;
     margin: 0;
-    margin-right: 60px;
+    margin-right: 58px;
     margin-bottom: 81px;
-    width: 324px;
+    width: 325px;
 
     &:nth-child(2n) {
       margin-right: 0;
@@ -159,5 +159,53 @@
   .hows-work__item.hows-work__item--time::after {
     content: "4";
     right: 73px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .hows-work {
+    padding: 16px 40px 0;
+    border: none;
+  }
+
+  .hows-work__item {
+    width: 245px;
+    min-height: 230px;
+    padding: 0;
+    padding-top: 114px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(3n) {
+      margin-bottom: 81px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      margin-bottom: 81px;
+    }
+  }
+
+  .hows-work__item.hows-work__item--leaf::after {
+    content: "1";
+    right: 10px;
+  }
+
+  .hows-work__item.hows-work__item--powder::after {
+    content: "2";
+    right: 0;
+  }
+
+  .hows-work__item.hows-work__item--food::after {
+    content: "3";
+    right: 0;
+  }
+
+  .hows-work__item.hows-work__item--time::after {
+    content: "4";
+    right: -6px;
   }
 }

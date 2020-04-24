@@ -70,12 +70,12 @@
   flex-direction: column;
 }
 
-.form__title-contacts {
+.form__title.form__title--contacts {
   padding-right: 85px;
   padding-bottom: 33px;
 }
 
-.form__title-comment {
+.form__title.form__title--comment {
   padding-bottom: 34px;
 
   &::after {
@@ -83,7 +83,7 @@
   }
 }
 
-.form__title-additionally {
+.form__title.form__title--additionally {
   padding-bottom: 33px;
 
   &::after {
@@ -139,7 +139,7 @@
     }
   }
 
-  .form__title-contacts {
+  .form__title.form__title--contacts {
     padding-bottom: 73px;
     padding-right: 100px;
 
@@ -155,7 +155,7 @@
     }
   }
 
-  .form__title-comment {
+  .form__title--comment {
     padding-bottom: 74px;
     padding-right: 430px;
 
@@ -185,7 +185,7 @@
     flex-direction: row;
   }
 
-  .form__title-additionally {
+  .form__title.form__title--additionally {
     padding-bottom: 54px;
     padding-right: 400px;
 
@@ -203,5 +203,80 @@
 
   .form__button.button {
     width: 285px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__top-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .form__about-cat {
+    padding-bottom: 0;
+    width: 570px;
+  }
+
+  .form__radio {
+    width: 570px;
+  }
+
+  .form__contacts {
+    padding-top: 71px;
+    padding-bottom: 50px;
+  }
+
+  .form__contacts-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__comment {
+    padding-bottom: 49px;
+  }
+
+  .form__additionally {
+    padding-bottom: 30px;
+  }
+
+  .form__button.button {
+    width: 570px;
+  }
+
+  .form__title::before {
+    left: -110px;
+    width: 70px;
+  }
+
+  .form__title.form__title--contacts {
+    padding-right: 700px;
+
+    &::after {
+      width: 777px;
+      top: 20px;
+      right: -110px;
+    }
+  }
+
+  .form__title.form__title--comment {
+    padding-right: 1020px;
+    padding-bottom: 74px;
+
+    &::after {
+      width: 1111px;
+      top: 20px;
+      right: -110px;
+    }
+  }
+
+  .form__title.form__title--additionally {
+    padding-right: 1000px;
+
+    &::after {
+      width: 1078px;
+      top: 20px;
+      right: -110px;
+    }
   }
 }

@@ -109,3 +109,25 @@
     }
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list {
+    width: 478px;
+    background-color: transparent;
+  }
+
+  .site-list__link {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .site-list__link.site-list__link--index {
+    color: @white;
+  }
+
+  .site-list__link.site-list__link--active-index {
+    &::after {
+      background-color: @white;
+    }
+  }
+}

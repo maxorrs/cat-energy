@@ -42,12 +42,11 @@
 
 @media (min-width: @tablet-width) {
   .page-footer__contacts {
-    padding-top: 64px;
-    padding-bottom: 57px;
+    padding: 64px 85px 57px 75px;
   }
 
   .page-footer__map {
-    width: 768px;
+    width: auto;
     height: auto;
   }
 
@@ -75,5 +74,26 @@
   .page-footer__copyright {
     padding: 0;
     border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__map {
+    width: auto;
+    height: auto;
+  }
+
+  .page-footer__socials {
+    margin-right: auto;
+  }
+
+  .page-footer__logo {
+    margin-right: 410px;
+  }
+
+  .page-footer__contacts {
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }

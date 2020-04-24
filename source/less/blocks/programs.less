@@ -161,8 +161,6 @@
   }
 
   .programs__title.programs__title--slim::before {
-    content: url("../img/icon-cat-slim.svg");
-    position: absolute;
     left: 422px;
     top: 2px;
     width: 141px;
@@ -171,8 +169,6 @@
   }
 
   .programs__title.programs__title--pro::before {
-    content: url("../img/icon-cat-pro.svg");
-    position: absolute;
     left: 359px;
     top: 57px;
     width: 268px;
@@ -260,5 +256,57 @@
 
   .programs__info {
     padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs {
+    padding-top: 33px;
+    padding-bottom: 20px;
+  }
+
+  .programs__item {
+    padding-left: 53px;
+    padding-bottom: 61px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .programs__title {
+    padding-left: 162px;
+    padding-bottom: 71px;
+    text-align: left;
+
+    &::after {
+      left: 0;
+    }
+  }
+
+  .programs__title.programs__title.programs__title--slim::before {
+    left: 13px;
+  }
+
+  .programs__title.programs__title--pro {
+    &::after {
+      top: 6px;
+      left: 0;
+    }
+
+    &::before {
+      width: 134px;
+      top: 28px;
+      left: -19px;
+    }
+  }
+
+  .programs__info {
+    padding-bottom: 32px;
+  }
+
+  .programs__info.programs__info--pro {
+    padding-right: 0;
   }
 }
