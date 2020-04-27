@@ -1,6 +1,14 @@
 .slider-list {
-  .list-reset();
-  padding-top: 13px;
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 311px;
+  height: 232px;
+}
+
+.slider-list__image.slider-list__image--remove {
+  display: none;
 }
 
 .slider-list__image.slider-list__image--before-use {
@@ -13,4 +21,29 @@
 
 .slider-list__image.slider-list__image--show {
   display: block;
+}
+
+.slider-list__item--before-after {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .slider-list {
+    width: 700px;
+  }
+
+  .slider-list__item {
+    position: absolute;
+  }
+
+  .slider-list__image {
+    margin: 0 auto;
+    display: block;
+    width: 700px;
+  }
+
+  .slider-list__item--before-after {
+    display: block;
+    width: 640px;
+  }
 }

@@ -12,3 +12,26 @@
   font-weight: normal;
   color: @black;
 }
+
+@media (min-width: @tablet-width) {
+  .main-catalog {
+    width: 768px;
+    padding: 40px 30px 76px 30px;
+  }
+
+  .main-catalog__title {
+    padding: 0;
+    width: auto;
+    padding-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-catalog {
+    padding: 0;
+    padding-top: 80px;
+    width: 1220px;
+  }
+}

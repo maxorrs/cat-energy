@@ -1,6 +1,27 @@
-.products__wrapper {
+.products {
   width: auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+
+@media (min-width: @tablet-width) {
+  .products {
+    position: relative;
+    padding-top: 44px;
+    padding-bottom: 15px;
+    flex-direction: row;
+  }
+
+  .products__card.products__card--more {
+    padding-top: 86px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .products {
+    padding-top: 44px;
+    padding-bottom: 13px;
+  }
 }
