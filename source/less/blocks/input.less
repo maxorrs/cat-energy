@@ -99,6 +99,10 @@
   right: 13px;
 }
 
+.input__control:focus + .input__icon {
+  fill: @primary-color;
+}
+
 
 @media (min-width: @tablet-width) {
   .input {
@@ -130,10 +134,6 @@
     padding-right: 20px;
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .input__control:focus + .input__icon {
-    fill: @primary-color;
   }
 
   .input__control.input__control--weight {

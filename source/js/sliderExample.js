@@ -13,7 +13,7 @@ buttonBefore.addEventListener("click", function (evt) {
 
   stripLeft.classList.add("strip__fill--show");
   stripRight.classList.remove("strip__fill--show");
-})
+});
 
 buttonAfter.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -23,4 +23,4 @@ buttonAfter.addEventListener("click", function (evt) {
 
   stripLeft.classList.remove("strip__fill--show");
   stripRight.classList.add("strip__fill--show");
-})
+});

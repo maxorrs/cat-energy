@@ -23,27 +23,22 @@
   display: block;
 }
 
-.slider-list__item--before-after {
-  display: none;
-}
-
 @media (min-width: @tablet-width) {
   .slider-list {
     width: 700px;
-  }
-
-  .slider-list__item {
-    position: absolute;
+    height: auto;
   }
 
   .slider-list__image {
     margin: 0 auto;
     display: block;
-    width: 700px;
+    width: auto;
+    height: 515px;
   }
+}
 
-  .slider-list__item--before-after {
-    display: block;
-    width: 640px;
+@media (min-width: @desktop-width) {
+  .slider-list {
+    width: auto;
   }
 }
