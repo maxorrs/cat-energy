@@ -95,9 +95,15 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-footer {
+    overflow: hidden;
+  }
+
   .page-footer__map {
-    width: 1300px;
+    width: 1440px;
     height: auto;
+    position: relative;
+    left: calc(10% - 162px);
   }
 
   .page-footer__map.page-footer__map--google {
@@ -106,7 +112,7 @@
 
     position: absolute;
     top: 0;
-    left: calc(50% - 720px);
+    left: calc(50% - 650px);
   }
 
   .page-footer__socials {

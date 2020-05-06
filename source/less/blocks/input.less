@@ -45,10 +45,6 @@
   }
 }
 
-.input__control.input__control--error {
-  outline: 2px solid #ff8282;
-}
-
 .input__control.input__control--weight {
   padding-left: 17px;
 }
@@ -85,10 +81,6 @@
   fill: @black-two;
 }
 
-.input__icon.input__icon--error {
-  fill: #ff8282;
-}
-
 .input__icon.input__icon--email {
   top: 16px;
   right: 16px;
@@ -103,6 +95,13 @@
   fill: @primary-color;
 }
 
+.input__control.input__control--error {
+  outline: 2px solid #ff8282;
+}
+
+.input__control.input__control--error + svg {
+  fill: #ff8282;
+}
 
 @media (min-width: @tablet-width) {
   .input {

@@ -4,24 +4,36 @@
 }
 
 .other-products__title {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.other-products__title-text {
   margin: 0;
-  padding-right: 45px;
+  padding: 0;
+  padding-left: 20px;
   padding-bottom: 33px;
+  width: 255px;
   position: relative;
   font-size: 24px;
   line-height: 24px;
   font-weight: normal;
   color: @black;
+  background-color: @white;
+}
+
+.other-products__wrapper-title {
+  position: relative;
 
   &::after {
     content: "";
-    display: block;
     position: absolute;
     top: 13px;
-    right: -20px;
-    width: 53px;
+    left: 267px;
+    right: 0;
     height: 3px;
     background-color: @primary-color;
+    z-index: -1;
   }
 }
 
@@ -31,7 +43,6 @@
 
 @media (min-width: @tablet-width) {
   .other-products {
-    width: 708px;
     padding: 0;
   }
 
@@ -41,34 +52,27 @@
   }
 
   .other-products__title {
-    padding-left: 38px;
-    padding-right: 315px;
+    width: 708px;
+  }
+
+  .other-products__title-text {
+    padding-left: 36px;
     padding-bottom: 78px;
     font-size: 36px;
+    width: 410px;
     line-height: 36px;
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: -30px;
-      width: 28px;
-      height: 3px;
-      background-color: @primary-color;
-    }
-
-    &::after {
-      top: 20px;
-      right: -30px;
-      width: 327px;
-    }
+  .other-products__wrapper-title::after {
+    top: 20px;
+    left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   .other-products {
     width: auto;
+    margin: 0;
     padding-top: 8px;
     padding-bottom: 86px;
   }
@@ -84,20 +88,21 @@
   }
 
   .other-products__title {
+    width: 1300px;
     padding: 0;
+  }
+
+  .other-products__title-text {
+    padding: 0;
+    padding-left: 40px;
     padding-bottom: 78px;
-    padding-right: 870px;
+    padding-right: 32px;
     background-color: @white;
+    width: 413px;
+  }
 
-    &::before {
-      left: -110px;
-      width: 70px;
-    }
-
-    &::after {
-      right: -110px;
-      width: 957px;
-    }
+  .other-products__wrapper-title::after {
+    left: 0;
   }
 
   .other-products__item {

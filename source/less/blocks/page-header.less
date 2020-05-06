@@ -33,14 +33,18 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
-    margin: 0 auto;
-    padding: 0 30px;
     padding-top: 25px;
     padding-bottom: 20px;
+  }
+
+  .page-header__wrapper {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 768px;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 768px;
   }
 
   .page-header__bar {
@@ -64,9 +68,15 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 0 40px;
+    width: auto;
     padding-top: 50px;
-    width: @desktop-width;
+    padding-bottom: 30px;
+  }
+
+  .page-header__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto;
   }
 
   .page-header__logo {

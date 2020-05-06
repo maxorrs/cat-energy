@@ -1,11 +1,9 @@
 .main-catalog {
   padding-top: 17px;
-  width: 320px;
-  margin: 0 auto;
 }
 
 .main-catalog__title {
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 26px;
   font-size: 36px;
   line-height: 60px;
@@ -15,13 +13,14 @@
 
 @media (min-width: @tablet-width) {
   .main-catalog {
-    width: 768px;
-    padding: 40px 30px 76px 30px;
+    width: auto;
+    padding: 40px 0 76px 0;
   }
 
   .main-catalog__title {
-    padding: 0;
-    width: auto;
+    padding: 0 30px;
+    width: 768px;
+    margin: 0 auto;
     padding-bottom: 32px;
     font-size: 60px;
     line-height: 60px;
@@ -32,6 +31,15 @@
   .main-catalog {
     padding: 0;
     padding-top: 80px;
-    width: 1220px;
+    width: auto;
+  }
+
+  .main-catalog__title {
+    padding: 0 40px;
+    margin: 0 auto;
+    width: 1300px;
+    padding-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
