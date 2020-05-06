@@ -1,9 +1,9 @@
 .info-wrapper {
-  background-color: #65a93c;
+  background: linear-gradient(90deg, rgba(101, 169, 60, 1) 0%, rgba(98, 167, 57, 1) 100%);
 }
 
 .info__wrapper {
-  background-color: #65a93c;
+  background-color: @primary-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -104,36 +104,18 @@
 
 @media (min-width: @desktop-width) {
   .info {
+    margin: 0;
+    padding: 0;
+    width: 100%;
     position: relative;
-    width: 1300px;
-    min-height: 630px;
-    margin: 0 auto;
-    padding: 112px 40px 30px;
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: -113px;
-      right: 0;
-      width: 650px;
-      height: 696px;
-      background-image: url("../img/index-background-desktop@1x.jpg");
-      background-repeat: no-repeat;
-
-      z-index: -1;
-    }
-
-    @media (min-resolution: @retina-dppx) {
-      &::after {
-        background-image: url("../img/index-background-desktop@2x.jpg");
-        background-size: 650px auto;
-      }
-    }
+    min-height: 600px;
   }
 
   .info-wrapper {
-    width: 570px;
-    padding-left: 81px;
+    position: relative;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 113px 720px 0 120px;
   }
 
   .info__text {
@@ -141,16 +123,22 @@
   }
 
   .info__bottom {
-    margin: 0;
-    padding-left: 81px;
-    width: 570px;
+    width: 1300px;
+    padding: 0 30px;
+    margin: 0 auto;
+    padding-left: 120px;
+    padding-right: 720px;
   }
 
   .info__image {
     bottom: -133px;
-    left: 450px;
+    left: 490px;
     width: 552px;
     height: auto;
-    z-index: 0;
+    z-index: 1;
+  }
+
+  .info__title {
+    padding-bottom: 39px;
   }
 }
