@@ -11,6 +11,7 @@
 }
 
 .input__label {
+  white-space: nowrap;
   margin-right: 15px;
   font-size: 16px;
   line-height: 18px;
@@ -19,6 +20,7 @@
 }
 
 .input__control {
+  overflow: hidden;
   padding-top: 13px;
   padding-bottom: 12px;
   padding-left: 14px;
@@ -76,6 +78,11 @@
   height: 150px;
 }
 
+.input.input--textarea {
+  margin: 0 auto;
+  width: 280px;
+}
+
 .input__icon {
   position: absolute;
   fill: @black-two;
@@ -106,6 +113,10 @@
 @media (min-width: @tablet-width) {
   .input {
     margin-bottom: 20px;
+  }
+
+  .input.input--textarea {
+    width: 625px;
   }
 
   .input__label {
@@ -186,6 +197,7 @@
   }
 
   .input.input--textarea {
-    width: auto;
+    margin: 0 auto;
+    width: 1220px;
   }
 }

@@ -16,7 +16,7 @@
   margin-right: auto;
 }
 
-.page-footer__map.page-footer__map--google {
+.page-footer__map--google {
   width: 320px;
   height: 362px;
   position: absolute;
@@ -58,7 +58,7 @@
     height: auto;
   }
 
-  .page-footer__map.page-footer__map--google {
+  .page-footer__map--google {
     width: 768px;
     height: 401px;
 
@@ -101,18 +101,18 @@
 
   .page-footer__map {
     width: 1440px;
-    height: auto;
     position: relative;
-    left: calc(10% - 162px);
+    margin-left: calc(50% - 720px);
   }
 
-  .page-footer__map.page-footer__map--google {
-    width: 1300px;
-    height: 361px;
+  .page-footer__map--google {
+    width: 100vw;
+    height: 400px;
 
     position: absolute;
     top: 0;
-    left: calc(50% - 650px);
+    left: 0;
+    z-index: 1;
   }
 
   .page-footer__socials {
