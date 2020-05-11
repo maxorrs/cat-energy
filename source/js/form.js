@@ -22,16 +22,16 @@ const weight = form.querySelector('[name=weight]');
 const age = form.querySelector('[name=age]');
 const email = form.querySelector('[name=email]');
 const tel = form.querySelector('[name=tel]');
-let requiredFields = [firstName, weight, email, tel];
-let onlyNumberFields = [weight, age];
+var requiredFields = [firstName, weight, email, tel];
+var onlyNumberFields = [weight, age];
 
-for (let i = 0; i < onlyNumberFields.length; i++) {
+for (var i = 0; i < onlyNumberFields.length; i++) {
   onlyNumberFields[i].addEventListener('keyup', function () {
     this.value = this.value.replace(/[^\d]/g, '');
   });
 }
 
-for (let i = 0; i < requiredFields.length; i++) {
+for (var i = 0; i < requiredFields.length; i++) {
 
   requiredFields[i].addEventListener('blur', function () {
     if (!this.value) {
@@ -49,9 +49,9 @@ for (let i = 0; i < requiredFields.length; i++) {
 }
 
 form.addEventListener('submit', function (evt) {
-  let focusOn = false;
+  var focusOn = false;
 
-  for (let i = 0; i < requiredFields.length; i++) {
+  for (var i = 0; i < requiredFields.length; i++) {
     if (!requiredFields[i].value) {
       evt.preventDefault();
       if (!focusOn) {

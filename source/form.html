@@ -4,17 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Подбор программы | «Кэт энерджи»</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="/fonts/Oswald/Oswald-Regular.woff2" as="font" crossorigin="anonymous">
-    <script src="js/svg4everybody.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
     <script>svg4everybody(); // run it now or whenever you are ready</script>
     <script>
       // Picture element HTML5 shiv
       document.createElement( "picture" );
     </script>
-    <script src="js/picturefill.js" async></script>
+    <script src="js/picturefill.min.js" async=""></script>
   </head>
   <body>
+    <div style="display: none;">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__bar">
@@ -51,11 +54,11 @@
             <div class="form__about-cat">
               <label class="form__item input">
                 <span class="input__label">Имя:*</span>
-                <input class="input__control" type="text" name="first-name" placeholder="Барсик" >
+                <input class="input__control" type="text" name="first-name" placeholder="Барсик">
               </label>
               <label class="form__item input">
                 <span class="input__label input__label--weight">Вес (кг):*</span>
-                <input class="input__control input__control--weight" type="text" name="weight" placeholder="7" >
+                <input class="input__control input__control--weight" type="text" name="weight" placeholder="7">
               </label>
               <label class="form__item input">
                 <span class="input__label">Возраст (лет):</span>
@@ -64,7 +67,7 @@
             </div>
             <div class="form__radio">
               <label class="form__item radio">
-                <input class="radio__control visually-hidden" type="radio" name="programs" value="weight-loss" checked>
+                <input class="radio__control visually-hidden" type="radio" name="programs" value="weight-loss" checked="">
                 <span class="radio__label">Похудение</span>
               </label>
               <label class="form__item radio">
@@ -86,13 +89,13 @@
             <div class="form__contacts-wrapper">
               <label class="form__item input">
                 <span class="input__label input__label--email">E-mail:*</span>
-                <input class="input__control input__control--email" type="email" name="email" placeholder="kuklachev@gmail.com" >
-                <svg class="input__icon input__icon--email" width="17" height="13" role="img"><use xlink:href="img/sprite.svg#icon-email"></use></svg>
+                <input class="input__control input__control--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <svg class="input__icon input__icon--email" width="17" height="13" role="img"><use xlink:href="#icon-mail"></use></svg>
               </label>
               <label class="form__item input">
                 <span class="input__label input__label--tel">Телефон:*</span>
-                <input class="input__control input__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" >
-                <svg class="input__icon input__icon--tel" width="20" height="20" role="img"><use xlink:href="img/sprite.svg#icon-tel"></use></svg>
+                <input class="input__control input__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+                <svg class="input__icon input__icon--tel" width="20" height="20" role="img"><use xlink:href="#icon-phone"></use></svg>
               </label>
             </div>
           </div>
@@ -116,24 +119,24 @@
 
             <div class="form__additionally-wrapper">
               <label class="form__item checkbox">
-                <input class="checkbox__control visually-hidden" type="checkbox" name="sugar-substitute" checked>
+                <input class="checkbox__control visually-hidden" type="checkbox" name="sugar-substitute" checked="">
                 <span class="checkbox__label">Сахарозаменитель</span>
-                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="img/sprite.svg#tick"></use></svg>
+                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="#icon-tick"></use></svg>
               </label>
               <label class="form__item checkbox">
                 <input class="checkbox__control visually-hidden" type="checkbox" name="water">
                 <span class="checkbox__label">Питьевая вода</span>
-                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="img/sprite.svg#tick"></use></svg>
+                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="#icon-tick"></use></svg>
               </label>
               <label class="form__item checkbox">
                 <input class="checkbox__control visually-hidden" type="checkbox" name="milk">
                 <span class="checkbox__label">Молоко</span>
-                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="img/sprite.svg#tick"></use></svg>
+                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="#icon-tick"></use></svg>
               </label>
               <label class="form__item checkbox">
                 <input class="checkbox__control visually-hidden" type="checkbox" name="vitamins">
                 <span class="checkbox__label">Витамины</span>
-                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="img/sprite.svg#tick"></use></svg>
+                <svg class="checkbox__tick" width="21" height="16" role="img"><use xlink:href="#icon-tick"></use></svg>
               </label>
             </div>
           </div>
@@ -175,28 +178,28 @@
         <ul class="page-footer__socials socials">
           <li class="socials__item">
             <a class="socials__link socials__link--vk" href="#" aria-label="ВКонтакте">
-              <svg width="30" height="16" role="img"><use xlink:href="img/sprite.svg#vk"></use></svg>
+              <svg width="30" height="16" role="img"><use xlink:href="#icon-vk"></use></svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--inst" href="#" aria-label="Instagram">
-              <svg width="23" height="23" role="img"><use xlink:href="img/sprite.svg#inst"></use></svg>
+              <svg width="23" height="23" role="img"><use xlink:href="#icon-insta"></use></svg>
             </a>
           </li>
           <li class="socials__item">
             <a class="socials__link socials__link--fb" href="#" aria-label="Facebook">
-              <svg width="14" height="28" role="img"><use xlink:href="img/sprite.svg#fb"></use></svg>
+              <svg width="14" height="28" role="img"><use xlink:href="#icon-fb"></use></svg>
             </a>
           </li>
         </ul>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <p class="copyright__developer">HTML Academy</p>
-            <svg class="copyright__image" width="60" height="60" role="img"><use xlink:href="img/sprite.svg#logo-htmlacademy"></use></svg>
+            <svg class="copyright__image" width="60" height="60" role="img"><use xlink:href="#icon-htmlacademy"></use></svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/form.js"></script>
+    <script src="js/form.min.js"></script>
   </body>
 </html>
