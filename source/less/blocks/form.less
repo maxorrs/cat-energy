@@ -1,4 +1,6 @@
 .form__about-cat {
+  width: 280px;
+  margin: 0 auto;
   position: relative;
   padding-bottom: 24px;
 
@@ -13,6 +15,8 @@
 }
 
 .form__radio {
+  width: 280px;
+  margin: 0 auto;
   position: relative;
   padding-top: 18px;
   padding-bottom: 21px;
@@ -34,23 +38,39 @@
   padding-bottom: 29px;
 }
 
+.form__contacts-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .form__title {
+  width: 320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.form__title-text {
   margin: 0;
   position: relative;
   font-size: 24px;
   line-height: 24px;
   color: @black;
   font-weight: normal;
+  background-color: @white;
+}
+
+.form__wrapper-title {
+  position: relative;
 
   &::after {
     content: "";
-    display: block;
-    width: 98px;
-    height: 3px;
     position: absolute;
     top: 13px;
-    right: -20px;
+    left: calc(50% - 120px);
+    right: 0;
+    height: 3px;
     background-color: @primary-color;
+    z-index: -1;
   }
 }
 
@@ -65,25 +85,25 @@
 }
 
 .form__additionally-wrapper {
+  width: 280px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.form__title.form__title--contacts {
-  padding-right: 85px;
+.form__title-text.form__title-text--contacts {
+  width: 200px;
   padding-bottom: 33px;
 }
 
-.form__title.form__title--comment {
+.form__title-text.form__title-text--comment {
+  width: 142px;
   padding-bottom: 34px;
-
-  &::after {
-    width: 157px;
-  }
 }
 
-.form__title.form__title--additionally {
+.form__title-text.form__title-text--additionally {
+  width: 164px;
   padding-bottom: 33px;
 
   &::after {
@@ -91,10 +111,26 @@
   }
 }
 
+.form__button-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button.button {
+  padding-top: 11px;
+  padding-bottom: 9px;
+}
+
 @media (min-width: @tablet-width) {
   .form__about-cat {
-    padding-left: 2px;
     padding-bottom: 72px;
+    width: 625px;
+    margin: 0 auto;
 
     &::after {
       display: none;
@@ -102,6 +138,8 @@
   }
 
   .form__radio {
+    width: 630px;
+    margin: 0 auto;
     padding-top: 25px;
     padding-bottom: 23px;
     padding-left: 27px;
@@ -115,60 +153,40 @@
 
   .form__contacts {
     padding-top: 78px;
-    padding-bottom: 67px;
+    padding-bottom: 68px;
+  }
+
+  .form__wrapper-title::after {
+    top: 19px;
+    left: 0;
+    right: 0;
+    height: 3px;
   }
 
   .form__title {
+    padding-left: 30px;
+    width: 768px;
+  }
+
+  .form__title-text {
+    padding-left: 40px;
     padding-bottom: 73px;
     font-size: 36px;
     line-height: 36px;
-
-    &::after {
-      display: none;
-    }
-
-    &::before {
-      content: "";
-      display: block;
-      width: 30px;
-      height: 3px;
-      position: absolute;
-      top: 20px;
-      left: -70px;
-      background-color: @primary-color;
-    }
   }
 
-  .form__title.form__title--contacts {
+  .form__title-text.form__title-text--contacts {
     padding-bottom: 73px;
-    padding-right: 100px;
-
-    &::after {
-      content: "";
-      display: block;
-      width: 145px;
-      height: 3px;
-      position: absolute;
-      top: 19px;
-      right: -67px;
-      background-color: @primary-color;
-    }
+    width: 593px;
   }
 
-  .form__title.form__title--comment {
-    padding-bottom: 74px;
-    padding-right: 430px;
+  .form__contacts-wrapper {
+    width: 631px;
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      width: 479px;
-      height: 3px;
-      position: absolute;
-      top: 20px;
-      right: -67px;
-      background-color: @primary-color;
-    }
+  .form__title-text.form__title-text--comment {
+    width: 260px;
+    padding-bottom: 74px;
   }
 
   .form__comment {
@@ -176,45 +194,50 @@
   }
 
   .form__additionally {
-    padding-bottom: 23px;
+    padding-bottom: 22px;
   }
 
   .form__additionally-wrapper {
+    width: 630px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
-  .form__title.form__title--additionally {
+  .form__title-text.form__title-text--additionally {
+    width: 290px;
     padding-bottom: 54px;
-    padding-right: 400px;
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      width: 446px;
-      height: 3px;
-      position: absolute;
-      top: 20px;
-      right: -67px;
-      background-color: @primary-color;
-    }
+  .form__button-wrapper {
+    width: 627px;
+    margin: 0 auto;
+  }
+
+  .form__button {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   .form__button.button {
+    padding-top: 16px;
+    padding-bottom: 16px;
     width: 285px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .form__title {
-    overflow: hidden;
-  }
-
   .form__top-wrapper {
+    width: 1300px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .form__title {
+    padding-left: 0;
+    width: 1300px;
   }
 
   .form__about-cat {
@@ -227,34 +250,43 @@
   }
 
   .form__contacts {
-    padding-top: 71px;
+    padding-top: 70px;
     padding-bottom: 50px;
   }
 
   .form__contacts-wrapper {
     display: flex;
     flex-wrap: wrap;
+    width: 1220px;
   }
 
   .form__comment {
-    padding-bottom: 49px;
+    padding-bottom: 69px;
   }
 
   .form__additionally {
     padding-bottom: 30px;
   }
 
+  .form__additionally-wrapper {
+    width: 1225px;
+  }
+
+  .form__button-wrapper {
+    width: 1220px;
+  }
+
   .form__button.button {
     width: 570px;
   }
 
-  .form__title::before {
+  .form__title-text::before {
     left: -110px;
     width: 70px;
   }
 
-  .form__title.form__title--contacts {
-    padding-right: 700px;
+  .form__title-text.form__title-text--contacts {
+    padding-right: 0;
 
     &::after {
       width: 777px;
@@ -263,8 +295,8 @@
     }
   }
 
-  .form__title.form__title--comment {
-    padding-right: 1020px;
+  .form__title-text.form__title-text--comment {
+    width: 258px;
     padding-bottom: 74px;
 
     &::after {
@@ -274,13 +306,13 @@
     }
   }
 
-  .form__title.form__title--additionally {
-    padding-right: 1000px;
+  .form__title-text.form__title-text--additionally {
+    padding-bottom: 53px;
+  }
 
-    &::after {
-      width: 1078px;
-      top: 20px;
-      right: -110px;
-    }
+  .form__title-text.form__title-text--additionally::after {
+    width: 1078px;
+    top: 20px;
+    right: -110px;
   }
 }
