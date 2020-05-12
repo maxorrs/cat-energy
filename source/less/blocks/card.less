@@ -21,7 +21,6 @@
 .card__data {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   width: 141px;
 }
 
@@ -45,6 +44,10 @@
   font-size: 12px;
   line-height: 16px;
   color: @grey-text;
+
+  &:first-of-type {
+    margin-right: auto;
+  }
 }
 
 .card__button {
@@ -144,13 +147,14 @@
     padding-bottom: 16px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    flex-basis: auto;
     width: 250px;
 
     &::after {
       content: "";
       position: absolute;
       bottom: 8px;
+      left: 0;
       width: 100%;
       height: 1px;
       background-color: #cdcdcd;

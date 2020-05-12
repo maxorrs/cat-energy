@@ -2,7 +2,6 @@
   position: relative;
   margin-bottom: 14px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 
   &:last-child {
@@ -20,7 +19,7 @@
 }
 
 .input__control {
-  overflow: hidden;
+  min-width: 0;
   padding-top: 13px;
   padding-bottom: 12px;
   padding-left: 14px;
@@ -33,6 +32,11 @@
   border: 1px solid rgba(205, 205, 205, 0.5);
 
   &::placeholder {
+    font-family: @primary-font;
+    text-transform: uppercase;
+  }
+
+  &::-ms-input-placeholder {
     font-family: @primary-font;
     text-transform: uppercase;
   }
