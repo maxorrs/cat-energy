@@ -7,7 +7,10 @@
   background-color: @white;
   padding-top: 28px;
   padding-bottom: 25px;
-  z-index: 1;
+}
+
+.page-footer__map-wrapper {
+  position: relative;
 }
 
 .page-footer__map {
@@ -21,7 +24,7 @@
   height: 362px;
   position: absolute;
   left: calc(50% - 160px);
-  top: 115px;
+  top: 0;
 }
 
 .page-footer__logo {
@@ -63,12 +66,12 @@
     height: 401px;
 
     position: absolute;
-    top: 203px;
+    top: 0;
     left: calc(50% - 385px);
   }
 
   .page-footer__bottom {
-    padding-top: 51px;
+    padding-top: 47px;
     padding-bottom: 51px;
     display: flex;
     flex-wrap: wrap;
@@ -128,6 +131,7 @@
     position: absolute;
     top: 95px;
     left: calc(50% - 610px);
+    z-index: 3;
   }
 
   .page-footer__bottom {
