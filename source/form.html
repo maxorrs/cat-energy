@@ -56,11 +56,11 @@
             <div class="form__about-cat">
               <label class="form__item input">
                 <span class="input__label">Имя:*</span>
-                <input class="input__control" type="text" name="first-name" placeholder="Барсик">
+                <input class="input__control" type="text" name="first-name" placeholder="Барсик" required>
               </label>
               <label class="form__item input">
                 <span class="input__label input__label--weight">Вес (кг):*</span>
-                <input class="input__control input__control--weight" type="text" name="weight" placeholder="7">
+                <input class="input__control input__control--weight" type="text" name="weight" placeholder="7" required>
               </label>
               <label class="form__item input">
                 <span class="input__label">Возраст (лет):</span>
@@ -91,12 +91,12 @@
             <div class="form__contacts-wrapper">
               <label class="form__item input">
                 <span class="input__label input__label--email">E-mail:*</span>
-                <input class="input__control input__control--email" type="email" name="email" placeholder="kuklachev@gmail.com">
+                <input class="input__control input__control--email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
                 <svg class="input__icon input__icon--email" width="17" height="13" role="img"><use xlink:href="#icon-mail"></use></svg>
               </label>
               <label class="form__item input">
                 <span class="input__label input__label--tel">Телефон:*</span>
-                <input class="input__control input__control--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
+                <input class="input__control input__control--tel" type="tel" name="tel" placeholder="8 (___) ___-__-__" pattern="8\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
                 <svg class="input__icon input__icon--tel" width="20" height="20" role="img"><use xlink:href="#icon-phone"></use></svg>
               </label>
             </div>
@@ -107,9 +107,8 @@
                 <h2 class="form__title-text form__title-text--comment">Комментарий</h2>
               </div>
             </div>
-
-            <label class="form__item input input--textarea">
-              <textarea class="input__control input__control--textarea" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <label class="form__item textarea">
+              <textarea class="textarea__control" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </label>
           </div>
           <div class="form__additionally">
@@ -160,7 +159,7 @@
         </div>
       </div>
       <div class="page-footer__map-wrapper">
-        <iframe class="page-footer__map--google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.32085871620664!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588326981344!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen=""></iframe>
+        <iframe class="page-footer__map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003192!2d30.32085871620664!3d59.93871916905404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588326981344!5m2!1sru!2sru" width="600" height="450" style="border: 0;" allowfullscreen=""></iframe>
         <div class="page-footer__map map">
           <picture>
             <source type="image/webp" media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">

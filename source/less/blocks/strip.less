@@ -57,6 +57,7 @@
       border-radius: 50%;
       box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
       cursor: pointer;
+      transition: 0.4s ease-out;
     }
 
     &::before {
@@ -71,6 +72,23 @@
       border-radius: 50%;
       z-index: 5;
       cursor: pointer;
+      transition: 0.4s ease-out;
     }
+  }
+
+  .strip.strip--left::before {
+    left: 13px;
+  }
+
+  .strip.strip--left::after {
+    left: 0;
+  }
+
+  .strip.strip--right::before {
+    left: 413px;
+  }
+
+  .strip.strip--right::after {
+    left: 400px;
   }
 }

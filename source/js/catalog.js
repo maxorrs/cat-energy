@@ -1,5 +1,5 @@
-var menu = document.querySelector(".site-list");
-var menuButton = document.querySelector(".menu-toggle");
+const menu = document.querySelector(".site-list");
+const menuButton = document.querySelector(".menu-toggle");
 
 if (menu.classList.contains("site-list--show")) {
   menu.classList.remove("site-list--show");

@@ -1,7 +1,7 @@
 // Menu
 
-let menu = document.querySelector('.site-list');
-let menuButton = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.site-list');
+const menuButton = document.querySelector('.menu-toggle');
 
 if (menu.classList.contains('site-list--show')) {
   menu.classList.remove('site-list--show');
@@ -16,14 +16,16 @@ if (menu.classList.contains('site-list--show')) {
 
 // Slider
 
-let imageBefore = document.querySelector('.slider-list__image--before-use');
-let imageAfter = document.querySelector('.slider-list__image--after-use');
-let stripLeft = document.querySelector('.strip__fill--left');
-let stripRight = document.querySelector('.strip__fill--right');
-let buttonBefore = document.querySelector('.slider-result__toggle--before');
-let buttonAfter = document.querySelector('.slider-result__toggle--after');
-let back = document.querySelector('.example__wrapper-back', '::before');
-let indicators = document.querySelectorAll('.indicators__text');
+const imageBefore = document.querySelector('.slider-list__image--before-use');
+const imageAfter = document.querySelector('.slider-list__image--after-use');
+const stripLeft = document.querySelector('.strip__fill--left');
+const stripRight = document.querySelector('.strip__fill--right');
+const buttonBefore = document.querySelector('.slider-result__toggle--before');
+const buttonAfter = document.querySelector('.slider-result__toggle--after');
+const back = document.querySelector('.example__wrapper-back', '::before');
+const indicators = document.querySelectorAll('.indicators__text');
+const stripBefore = document.querySelector('.strip', '::before');
+const stripAfter = document.querySelector('.strip', '::after');
 
 buttonBefore.addEventListener('click', function (evt) {
   evt.preventDefault();
@@ -37,7 +39,10 @@ buttonBefore.addEventListener('click', function (evt) {
   back.classList.add('example__wrapper-back-first');
   back.classList.remove('example__wrapper-back-second');
 
-  for (let item of indicators) {
+  stripBefore.classList.add('strip--left');
+  stripBefore.classList.remove('strip--right');
+
+  for (var item of indicators) {
     item.classList.add('indicators__text--left');
     item.classList.remove('indicators__text--right');
   };
@@ -55,7 +60,10 @@ buttonAfter.addEventListener('click', function (evt) {
   back.classList.remove('example__wrapper-back-first');
   back.classList.add('example__wrapper-back-second');
 
-  for (let item of indicators) {
+  stripBefore.classList.remove('strip--left');
+  stripBefore.classList.add('strip--right');
+
+  for (var item of indicators) {
     item.classList.remove('indicators__text--left');
     item.classList.add('indicators__text--right');
   };
