@@ -96,7 +96,7 @@
   &::after {
     position: absolute;
     top: -1px;
-    left: 0;
+    right: 0;
     content: url("../img/icon-right-arrow-long.svg");
     width: 25px;
     height: 12px;
@@ -106,8 +106,7 @@
     content: url("../img/icon-right-arrow-verylong.svg");
     width: 34px;
     height: 12px;
-    top: -1px;
-    left: 0;
+    right: 15px;
   }
 
   &:active {
@@ -116,16 +115,24 @@
 }
 
 .programs__link.programs__link--slim::after {
-  left: 97px;
+  right: 9px;
+}
+
+.programs__link.programs__link--slim:hover::after {
+  right: 0;
 }
 
 .programs__link.programs__link--pro::after {
-  left: 95px;
+  right: 7px;
+}
+
+.programs__link.programs__link--pro:hover::after {
+  right: -2px;
 }
 
 @media (min-width: @tablet-width) {
   .programs {
-    padding-top: 22px;
+    padding-top: 21px;
     padding-bottom: 30px;
   }
 
@@ -142,6 +149,7 @@
   .programs__title {
     padding: 0;
     padding-bottom: 23px;
+    max-width: 340px;
     font-size: 36px;
     line-height: 37px;
 
@@ -203,18 +211,26 @@
       content: url("../img/icon-right-arrow-long.svg");
       position: absolute;
       top: -2.5px;
-      left: 10px;
+      right: 0;
       width: 25px;
       height: 12px;
     }
   }
 
   .programs__link.programs__link--slim::after {
-    left: 130px;
+    right: -49px;
+  }
+
+  .programs__link.programs__link--slim:hover::after {
+    right: -59px;
   }
 
   .programs__link.programs__link--pro::after {
-    left: 125px;
+    right: -47px;
+  }
+
+  .programs__link.programs__link--pro:hover::after {
+    right: -56px;
   }
 }
 
@@ -261,7 +277,7 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    padding-top: 33px;
+    padding-top: 34px;
     padding-bottom: 20px;
   }
 
@@ -279,6 +295,7 @@
     padding-left: 162px;
     padding-bottom: 71px;
     text-align: left;
+    max-width: 500px;
 
     &::after {
       left: 0;

@@ -1,18 +1,23 @@
 .indicators {
   display: flex;
   flex-wrap: wrap;
+  width: 366px;
 }
 
 .indicators__item {
   position: relative;
   margin-right: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-wrap: wrap;
 
   &:nth-child(2n) {
-    margin: 0;
+    margin-right: 0;
   }
 }
 
 .indicators__title {
+  flex-grow: 1;
   margin: 0;
   padding-left: 10px;
   padding-right: 10px;
@@ -31,7 +36,7 @@
 .indicators__text {
   position: absolute;
   margin: 0;
-  top: 47px;
+  bottom: -15px;
   left: 20px;
   width: 82px;
   text-align: center;
@@ -61,7 +66,7 @@
     font-size: 14px;
     line-height: 14px;
     left: 16px;
-    top: 63px;
+    bottom: 5px;
     background-color: @white;
   }
 }

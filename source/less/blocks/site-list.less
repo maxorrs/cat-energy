@@ -83,13 +83,18 @@
     padding: 0;
     padding-top: 3px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: space-between;
     width: 440px;
   }
 
   .site-list__item {
     padding: 0;
+    margin-right: 35px;
+
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
 
     &::after {
       display: none;
@@ -114,6 +119,10 @@
   .site-list {
     width: 478px;
     background-color: transparent;
+  }
+
+  .site-list__item {
+    margin-right: 34px;
   }
 
   .site-list__link {

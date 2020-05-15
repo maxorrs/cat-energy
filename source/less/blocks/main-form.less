@@ -1,4 +1,5 @@
 .main-form {
+  display: block;
   width: 100%;
   padding: 0;
   padding-top: 17px;
@@ -33,7 +34,9 @@
 }
 
 .main-form__afterwords {
-  margin: 0;
+  margin: 0 auto;
+  width: 320px;
+  padding: 0 20px;
   font-family: @secondary-font;
   font-size: 14px;
   line-height: 16px;
@@ -42,6 +45,10 @@
 }
 
 @media (min-width: @tablet-width) {
+  .main-form__form {
+    padding-top: 30px;
+  }
+
   .main-form {
     width: 100%;
     padding: 0;
@@ -66,13 +73,16 @@
     width: 768px;
     margin: 0 auto;
     padding: 0 70px;
-    padding-bottom: 65px;
+    padding-bottom: 35px;
     padding-right: 370px;
     font-size: 20px;
     line-height: 30px;
   }
 
   .main-form__afterwords {
+    padding: 0;
+    width: auto;
+    margin: 0;
     position: absolute;
     right: calc(50% - 210px);
     bottom: 41px;
@@ -98,7 +108,7 @@
     width: 1300px;
     padding-right: 900px;
     padding-left: 40px;
-    padding-bottom: 66px;
+    padding-bottom: 34px;
   }
 
   .main-form__wrapper {

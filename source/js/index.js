@@ -12,7 +12,7 @@ if (menu.classList.contains('site-list--show')) {
     menu.classList.toggle('site-list--show-outside');
     menuButton.classList.toggle('menu-toggle--close');
   };
-}
+};
 
 // Slider
 
@@ -40,7 +40,7 @@ buttonBefore.addEventListener('click', function (evt) {
   for (let item of indicators) {
     item.classList.add('indicators__text--left');
     item.classList.remove('indicators__text--right');
-  }
+  };
 });
 
 buttonAfter.addEventListener('click', function (evt) {
@@ -58,5 +58,5 @@ buttonAfter.addEventListener('click', function (evt) {
   for (let item of indicators) {
     item.classList.remove('indicators__text--left');
     item.classList.add('indicators__text--right');
-  }
+  };
 });

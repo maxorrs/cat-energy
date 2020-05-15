@@ -15,6 +15,8 @@
 
 .extra__link {
   margin: 0;
+  min-width: 100%;
+  padding-left: 2px;
   font-size: 16px;
   line-height: 16px;
   color: @black-two;
@@ -37,6 +39,21 @@
   color: @grey-text;
 }
 
+.extra__text.extra__text--quantity {
+  max-width: 180px;
+}
+
+.extra__text.extra__text--price {
+  max-width: 80px;
+}
+
+.extra__button.button {
+  padding-top: 11px;
+  padding-bottom: 9px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
 @media (min-width: @tablet-width) {
   .extra {
     padding: 26px 37px 27px 39px;
@@ -50,7 +67,7 @@
 
   .extra__wrapper {
     position: relative;
-    padding-bottom: 13px;
+    padding-bottom: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -61,7 +78,13 @@
     padding-top: 3px;
   }
 
+  .extra__title {
+    padding: 0;
+    max-width: 360px;
+  }
+
   .extra__link {
+    padding: 0;
     font-size: 20px;
     line-height: 20px;
   }
@@ -77,6 +100,7 @@
 
   .extra__text.extra__text--price {
     min-width: 44px;
+    max-width: 70px;
     text-align: right;
   }
 
@@ -129,6 +153,12 @@
 
   .extra__title {
     padding: 0;
+    max-width: 230px;
+  }
+
+  .extra__text.extra__text--quantity {
+    margin: 0;
+    max-width: 150px;
   }
 
   .extra__text.extra__text--price {
