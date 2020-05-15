@@ -1,0 +1,43 @@
+.textarea {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.textarea__control {
+  padding: 13px 10px 13px 15px;
+  width: 280px;
+  height: 150px;
+  font-family: @primary-font;
+  font-size: 16px;
+  line-height: 18px;
+  color: #444444;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .textarea {
+    width: 625px;
+  }
+
+  .textarea__control {
+    padding: 13px 15px;
+    width: 625px;
+    height: 172px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .textarea {
+    width: 1220px;
+  }
+
+  .textarea__control {
+    width: 1220px;
+    height: 174px;
+    padding: 15px 19px;
+  }
+}
