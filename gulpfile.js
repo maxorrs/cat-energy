@@ -69,14 +69,13 @@ gulp.task("webp", function () {
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
-    .pipe(sourcemap.init())
     .pipe(less())
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
-    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"));
 });
 

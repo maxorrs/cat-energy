@@ -1,12 +1,15 @@
 .socials {
-  width: 135px;
+  width: 132px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
 
 .socials__item {
-  margin-right: 38px;
+  display: flex;
+  justify-content: center;
+  margin-right: 28px;
+  width: 25px;
   margin-bottom: 10px;
 
   &:nth-child(3n) {
@@ -47,12 +50,13 @@
 
 @media (min-width: @tablet-width) {
   .socials {
-    width: 124px;
+    width: 150px;
   }
 
   .socials__item {
-    margin-right: 28px;
-    margin-bottom: 10px;
+    justify-content: start;
+    width: 35px;
+    margin-right: 22px;
   }
 
   .socials__link.socials__link--vk svg {

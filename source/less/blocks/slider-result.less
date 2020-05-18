@@ -46,7 +46,6 @@
     font-size: 20px;
     line-height: 20px;
     color: @black;
-    border-bottom: 1px dotted #bebebe;
     cursor: pointer;
   }
 
@@ -54,6 +53,50 @@
     padding: 0;
     margin: 0 auto;
     margin-bottom: 17px;
+  }
+
+  .slider-result__toggle.slider-result__toggle--before {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      border-bottom: 1px dotted #c0c0c0;
+    }
+
+    &:hover::after {
+      border-bottom: 1px solid #9a9a9a;
+    }
+
+    &:active::after {
+      border: none;
+    }
+  }
+
+  .slider-result__toggle.slider-result__toggle--after {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      border-bottom: 1px dotted #c0c0c0;
+    }
+
+    &:hover::after {
+      border-bottom: 1px solid #9a9a9a;
+    }
+
+    &:active::after {
+      border: none;
+    }
   }
 }
 
