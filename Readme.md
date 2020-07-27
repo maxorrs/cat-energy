@@ -11,6 +11,3 @@
 * Кроссбраузерность: Chrome, Firefox, Safari, Edge и Internet Explorer 11.
 
 [Сертификат](https://assets.htmlacademy.ru/certificates/intensive/157/1328569.pdf?1594908858)
----
-permalink: /index.html
----
